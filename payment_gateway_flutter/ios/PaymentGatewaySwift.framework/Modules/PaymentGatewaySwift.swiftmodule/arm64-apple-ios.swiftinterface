@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 effective-4.1.50 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name PaymentGatewaySwift
+import Foundation
+@_exported import PaymentGatewaySwift
+import Swift
+import UIKit
+import WebKit
+@_hasMissingDesignatedInitializers public class PaymentGateway {
+  public static func open(controller: UIKit.UIViewController, url: Swift.String, params: PaymentGatewaySwift.PaymentGatewayParams, delegate: PaymentGatewaySwift.PaymentGatewayDelegate)
+  public static func present(controller: UIKit.UIViewController, url: Swift.String, params: PaymentGatewaySwift.PaymentGatewayParams, delegate: PaymentGatewaySwift.PaymentGatewayDelegate)
+  @objc deinit
+}
+public protocol PaymentGatewayDelegate {
+  func didPaymentCompleted(_ controller: UIKit.UIViewController, data: Any?)
+  func didPaymentCanceled(_ controller: UIKit.UIViewController)
+}
+public struct PaymentGatewayParams : Swift.Codable {
+  public var api_key: Swift.String
+  public var order_id: Swift.String
+  public var hash: Swift.String
+  public var amount: Swift.String
+  public var mode: Swift.String
+  public var name: Swift.String
+  public var phone: Swift.String
+  public var email: Swift.String
+  public var currency: Swift.String
+  public var country: Swift.String
+  public var city: Swift.String
+  public var state: Swift.String?
+  public var address_line_1: Swift.String?
+  public var address_line_2: Swift.String?
+  public var zip_code: Swift.String
+  public var return_url: Swift.String
+  public var description: Swift.String
+  public var udf1: Swift.String?
+  public var udf2: Swift.String?
+  public var udf3: Swift.String?
+  public var udf4: Swift.String?
+  public var udf5: Swift.String?
+  public var interface_type: Swift.String?
+  public var timeout_duration: Swift.String?
+  public var return_url_failure: Swift.String?
+  public var return_url_cancel: Swift.String?
+  public var percent_tdr_by_user: Swift.String?
+  public var flatfee_tdr_by_user: Swift.String?
+  public var show_convenience_fee: Swift.String?
+  public var split_enforce_strict: Swift.String?
+  public var split_info: Swift.String?
+  public var payment_options: Swift.String?
+  public var payment_page_display_text: Swift.String?
+  public var allowed_bank_codes: Swift.String?
+  public var allowed_emi_tenure: Swift.String?
+  public var allowed_bins: Swift.String?
+  public var offer_code: Swift.String?
+  public var product_details: Swift.String?
+  public var enable_auto_refund: Swift.String?
+  public init(json: Foundation.NSDictionary)
+  public init()
+  public init(apiKey: Swift.String, orderId: Swift.String, hash: Swift.String, mode: Swift.String, amount: Swift.String, name: Swift.String, phone: Swift.String, email: Swift.String, returnURL: Swift.String, description: Swift.String, currency: Swift.String = "INR", country: Swift.String = "IND", city: Swift.String, state: Swift.String, addressLine1: Swift.String = "", addressLine2: Swift.String = "", udf1: Swift.String = "", udf2: Swift.String = "", udf3: Swift.String = "", udf4: Swift.String = "", udf5: Swift.String = "", interface_type: Swift.String? = nil, zipCode: Swift.String)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}

@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - payment_gateway_flutter (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - payment_gateway_flutter (from `.symlinks/plugins/payment_gateway_flutter/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  payment_gateway_flutter:
+    :path: ".symlinks/plugins/payment_gateway_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  payment_gateway_flutter: 6e7dcf4529d4dae434ef7a162a47681674fa582f
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.1
