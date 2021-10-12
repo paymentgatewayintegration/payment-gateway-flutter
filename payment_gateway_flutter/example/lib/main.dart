@@ -33,7 +33,7 @@ class _MyAppState extends State<_AppState> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Trakn Pay'),
+          title: const Text('Payment Gateway'),
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
