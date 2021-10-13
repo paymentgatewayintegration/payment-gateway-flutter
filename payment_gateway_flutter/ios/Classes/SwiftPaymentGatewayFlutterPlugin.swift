@@ -33,7 +33,7 @@ let successJSON = """
       
         if let controller = UIApplication.shared.keyWindow?.rootViewController, let payload = call.arguments as? NSDictionary, let url = payload["url"] as? String, let params = payload["params"] as? NSDictionary{
             let paymentParams = PaymentGatewayParams(json: params)
-         PaymentGateway.open(controller: controller, url: url, params: paymentParams, delegate: self)
+            PaymentGateway.open(controller: controller, url: url, params: paymentParams, delegate: self)
       }
     }
   }

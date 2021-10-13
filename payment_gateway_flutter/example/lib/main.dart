@@ -55,27 +55,30 @@ class _MyAppState extends State<_AppState> {
                     child: RaisedButton(
                       textColor: Colors.white,
                       color: Colors.blue,
-                      child: Text('Pay'),
+                      child: Text('Pay Now'),
                       onPressed: () {
-                        Map<String, dynamic> request ={};
-                        request['country']= "India";
-                        request['amount']= "10";
-                        request['city']= "TN";
-                        request['description']= "description";
-                        request['zip_code']= "123456";
-                        request['api_key']= "<API_KEY>";
-                        request['phone']= "123567890";
-                        request['name']= "name";
-                        request['address_line_1']= "ad1";
-                        request['address_line_2']= "ad2";
-                        request['return_url']= "return_url";
-                        request['currency']= "IND";
-                        request['state']= "TN";
-                        request['order_id']= "order_id";
-                        request['email']= "email";
-                        request['hash']= "hash";
-                        request['mode']="TEST";
-                        requestToPay(request, context);
+                    // For payment parammeters to refer 
+                    //https://pgandroidintegrations.docs.stoplight.io/request-param-list
+                    var params = {
+                    'api_key': '<API_KEY>',
+                    'hash': '<HASH_KEY>',
+                    'order_id': 'TEST4000',
+                    'mode': 'LIVE',
+                    'description': 'Test',
+                    'currency': 'INR',
+                    'amount': '2',
+                    'name': 'Senthil',
+                    'email': 'emailsenthil@test.com',
+                    'phone': '9597403366',
+                    'city': 'Chennai',
+                    'state': 'Tamilnadu',
+                    'country': 'IND',
+                    'zip_code': '630501',
+                    'address_line_1': 'ad1',
+                    'address_line_2': 'ad2',
+                    'return_url': 'http://localhost:8888/paymentresponse'};
+                    // Initiate payemnt
+                    open(params, context);
                       },
                     )),
                 if (paymentResponse.isNotEmpty)
@@ -95,10 +98,12 @@ class _MyAppState extends State<_AppState> {
     );
   }
 
-  void requestToPay(Map<String, dynamic> request, BuildContext context) async {
+  void open(Map<String, dynamic> request, BuildContext context) async {
     try {
       response = await PaymentGatewayFlutter.open(
-          'https://pgbizbatchsync.omniware.in/', request);
+          '<PAYMENT_API_URL>', request);
+      // Response Handling
+      //Please refre this url for reponse code https://pgandroidintegrations.docs.stoplight.io/response-codes
       var r=jsonDecode(response);
       print(r['status']);
       print(r['payment_response']);

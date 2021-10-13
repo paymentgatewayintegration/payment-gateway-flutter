@@ -17,6 +17,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 import org.json.JSONException
 import org.json.JSONObject
 import android.os.Handler
+import android.util.Log
 
 /** PaymentGatewayFlutterPlugin */
 class PaymentGatewayFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -53,15 +54,12 @@ class PaymentGatewayFlutterPlugin: FlutterPlugin, MethodCallHandler, ActivityAwa
         }
     }
     override fun onDetachedFromActivityForConfigChanges() {
-        TODO("Not yet implemented")
     }
 
-    override fun onReattachedToActivityForConfigChanges(binding: ActivityPluginBinding) {
-        TODO("Not yet implemented")
+    override fun onReattachedToActivityForConfigChanges(binding: ActivityPluginBinding) {    
     }
 
     override fun onDetachedFromActivity() {
-        TODO("Not yet implemented")
     }
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
