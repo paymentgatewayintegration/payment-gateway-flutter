@@ -78,10 +78,3 @@ var options = {
   }
 };
 ```
-
-
-#### Open Checkout
-
-```dart
-_Paymentgateway.open(options);
-```
