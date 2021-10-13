@@ -57,7 +57,7 @@ PaymentGatewayFlutter.open(
 
 try {
      varresponse = await PaymentGatewayFlutter.open(
-          'https://pgbizbatchsync.omniware.in/', request);
+          '<PAYMENT_URL>', request);
       var r=jsonDecode(response);
       print(r['status']);
       print(r['payment_response']);
