@@ -8,7 +8,7 @@ Flutter plugin for Paymentgateway SDK.
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Example App](https://github.com/Paymentgateway/payment-gateway-flutter/tree/master/example)
+* [Example App](https://github.com/paymentgatewayintegration/payment-gateway-flutter/tree/main/payment_gateway_flutter/example)
 
 ## Getting Started
 
@@ -16,6 +16,13 @@ This flutter plugin is a wrapper around our Android and iOS SDKs.
 
 The following documentation is only focused on the wrapper around our native Android and iOS SDKs. 
 
+## Prerequisites
+
+Development Tools:
+ 
+ * Xcode 12 and above
+ * Android Studio 4.1 and above
+ * Flutter 2.2.3  & Dart 2.12.0 and above
 
 ## Installation
 
@@ -36,7 +43,7 @@ Run `flutter packages get` in the root directory of your app.
 
 ## Usage
 
-Sample code to integrate can be found in [https://github.com/paymentgatewayintegration/payment-gateway-flutter/blob/main/payment_gateway_flutter/example/lib/main.dart](example/lib/main.dart).
+Sample code to integrate can be found in [example/lib/main.dart](https://github.com/paymentgatewayintegration/payment-gateway-flutter/blob/main/payment_gateway_flutter/example/lib/main.dart).
 
 #### Import package 
 
