@@ -31,7 +31,7 @@ This plugin is available on Pub: [https://pub.dev/packages/payment_gateway_flutt
 Add this to `dependencies` in your app's `pubspec.yaml`
 
 ```yaml
-payment_gateway_flutter: ^1.2.3
+payment_gateway_flutter: ^0.0.4
 ```
 
 **Note for Android**: Make sure that the minimum API level for your app is 19 or higher.
