@@ -16,13 +16,7 @@ Flutter plugin for Paymentgateway SDK.
 
 This flutter plugin is a wrapper around our Android and iOS SDKs.
 
-The following documentation is only focused on the wrapper around our native Android and iOS SDKs. To know more about our SDKs and how to link them within the projects, refer to the following documentation:
-
-**Android**: [https://Paymentgateway.com/docs/checkout/android/](https://Paymentgateway.com/docs/checkout/android/)
-
-**iOS**: [https://Paymentgateway.com/docs/ios/](https://Paymentgateway.com/docs/ios/)
-
-To know more about Paymentgateway payment flow and steps involved, read up here: [https://Paymentgateway.com/docs/](https://Paymentgateway.com/docs/)
+The following documentation is only focused on the wrapper around our native Android and iOS SDKs. 
 
 ## Prerequisites
 
