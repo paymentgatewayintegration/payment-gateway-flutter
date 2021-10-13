@@ -36,7 +36,7 @@ Run `flutter packages get` in the root directory of your app.
 
 ## Usage
 
-Sample code to integrate can be found in [example/lib/main.dart](example/lib/main.dart).
+Sample code to integrate can be found in [https://github.com/paymentgatewayintegration/payment-gateway-flutter/blob/main/payment_gateway_flutter/example/lib/main.dart](example/lib/main.dart).
 
 #### Import package 
 
