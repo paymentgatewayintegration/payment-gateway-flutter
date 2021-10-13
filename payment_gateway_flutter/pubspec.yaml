@@ -1,6 +1,6 @@
 name: payment_gateway_flutter
 description: A new flutter plugin project.
-version: 0.0.4
+version: 1.0.0
 homepage: https://github.com/paymentgatewayintegration/payment-gateway-flutter
 
 environment:
