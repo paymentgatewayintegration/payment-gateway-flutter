@@ -100,3 +100,24 @@ response = await PaymentGatewayFlutter.open(
       print(r['payment_response']);
     
 ```
+
+#### List of Request Parameters
+
+Request parameters are the parameters that will be send to our server API for payment initiation. Client should store the order id and the amount before payment initiation and compare it with the order id and amount in the response Json from our server post payment process to ensure no end user tampering on the requested parameters.
+
+Please use this link for all params reference [link](https://traknpaypg.docs.stoplight.io/request-param-list)
+
+#### List of Response Codes
+
+Note
+
+Below are the response codes that comes in the payment response post payment from our server, that must be handled by the client.
+
+Please use this link for reference [link](https://traknpaypg.docs.stoplight.io/response-codes)
+
+#### HASH Calculation
+
+Please use this link for reference [link](https://traknpaypg.docs.stoplight.io/architecture_explanation_and_Recommendations)
+
+
+
