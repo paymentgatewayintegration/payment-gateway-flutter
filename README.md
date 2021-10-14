@@ -36,6 +36,19 @@ payment_gateway_flutter: ^1.0.0
 
 **Note for Android**: Make sure that the minimum API level for your app is 19 or higher.
 
+In android project add this dependencies in build.gradle file
+
+```android
+dependencies {
+    .
+    .
+    .
+    // This is one of the dependency
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+}
+```
+
+
 
 **Note for iOS**: Make sure that the minimum deployment target for your app is iOS 10.0 or higher. Also, This is not support **SIMULATOR** you can run onlly in real **iPhone** devices.
 
